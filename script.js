@@ -29,7 +29,7 @@ function SetSuccess(Input) {
 form.addEventListener('submit',(e)=>{
     e.preventDefault();
 
-    let value = emailInput.value;
+    let value = emailInput.value.trim();
     if (value === '') {
         SetError(emailInput,'Please provide valid email address');
     } else if(!EmailValidation(value)){
