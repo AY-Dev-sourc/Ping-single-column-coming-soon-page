@@ -22,6 +22,7 @@ function SetSuccess(Input) {
     const inputField = Input.parentElement;
     const message = inputField.querySelector('.message');
 
+    input.value = '';
     message.innerHTML = '';
 }
 
